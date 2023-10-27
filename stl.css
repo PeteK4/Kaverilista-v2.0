@@ -1,0 +1,69 @@
+:root {
+    --varjot: #4c9faa;
+}
+
+@counter-style emoji-symbolit {
+  system: cyclic;
+  symbols: 🚀 🚁 🚂 🚐 🚣 🚜 🚙 🚴 🚒 🚅 🚕 🚗 🚢 🚡 🚗 🚲 🚎 🚆 🚤 🚛;
+  suffix: "  ";
+}
+
+body {
+    max-width: 450px;
+    margin: auto;
+    background-image: linear-gradient(50deg, #aec8ff, #fff 60%, #aec8ff 100%);
+    background-attachment: fixed;
+    font-family: Arial, sans-serif
+}
+
+h1 {
+    text-shadow: 4px 4px 5px var(--varjot);
+}
+
+.btn, input {
+    border: none;
+    box-shadow: 4px 4px 5px var(--varjot);
+}
+
+.btn-oma {
+color: white;
+background-color: #359ba8;
+box-shadow: 4px 4px 5px var(--varjot);
+}
+
+.btn-oma:hover {
+    color: white;
+    background-color: #ff0000;
+}
+
+.bg-boxi {
+    background-color: #73ccff;
+    box-shadow: 10px 10px 30px var(--varjot);
+}
+
+#tyhjenna {
+    position:relative;
+    top: -45px;
+    left: 65%;
+}
+
+#kaverilista {
+    background-color: rgb(155, 206, 255);
+    box-shadow: 10px 10px 30px var(--varjot);
+    list-style: emoji-symbolit;
+}
+
+@media (max-width: 576px) {
+    body {
+    padding: 0px 10px;
+    }
+
+    .bg-boxi, #kaverilista {
+        box-shadow: 2px 2px 6px var(--varjot);
+    }
+
+    #tyhjenna {
+    top: -40px;
+    left: 60%;
+}
+}
